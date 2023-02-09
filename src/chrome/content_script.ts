@@ -15,6 +15,10 @@ import {
   handler as twitterHandler,
 } from "../lib/twitter";
 import {
+  injector as redditInjector,
+  handler as redditHandler,
+} from "../lib/reddit";
+import {
   injector as announcementInjector,
   handler as announcementHandler,
 } from "../utils/announcements";
@@ -23,6 +27,7 @@ const service: Record<Domains, [() => void, () => Promise<void>]> = {
   [Domains.LinkedIn]: [linkedInInjector, linkedInHandler],
   [Domains.Instagram]: [instagramInjector, instagramHandler],
   [Domains.Twitter]: [twitterInjector, twitterHandler],
+  [Domains.Reddit]: [redditInjector, redditHandler],
 };
 
 export let notyf: Notyf | undefined;

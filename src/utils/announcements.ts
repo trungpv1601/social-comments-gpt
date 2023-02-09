@@ -96,6 +96,10 @@ export const injector = (domain: Domains) => {
           .querySelector(`nav[aria-live="polite"]`)
           ?.insertAdjacentHTML("afterend", content);
         break;
+      case Domains.Reddit:
+        document
+          .querySelector(`div[id="AppRouter-main-content"]`)
+          ?.insertAdjacentHTML("afterend", content);
     }
 
     window.announcementsFinishedLoading = true;

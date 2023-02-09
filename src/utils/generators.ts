@@ -18,6 +18,9 @@ export const createPrompt = (
     case Domains.Twitter:
       prompts = config["opt-twitter-prompts"];
       break;
+    case Domains.Reddit:
+      prompts = config["opt-reddit-prompts"];
+      break;
   }
 
   let prompt = prompts?.[Math.floor(Math.random() * prompts.length)] || "";

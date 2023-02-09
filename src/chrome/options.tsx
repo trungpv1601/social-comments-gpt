@@ -17,6 +17,7 @@ import Prompts from "./containers/Prompts";
 import { Domains } from "../utils/constants";
 
 import "./common.css";
+import ICReddit from "../components/IcReddit";
 
 const SECTIONS: (SectionProps & { comp: JSX.Element })[] = [
   // {
@@ -73,6 +74,11 @@ const TABS: TabItem[] = [
     comp: <Prompts type={Domains.Twitter} />,
     icon: <ICTwitter />,
   },
+  {
+    title: "Reddit Prompts",
+    comp: <Prompts type={Domains.Reddit} />,
+    icon: <ICReddit />,
+  }
 ];
 
 export const Main = styled.div`

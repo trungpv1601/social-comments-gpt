@@ -7,6 +7,7 @@ import {
   INSTAGRAM_PROMPTS,
   LINKED_IN_PROMPTS,
   TWITTER_PROMPTS,
+  REDDIT_PROMPTS,
 } from "./prompts";
 
 const OPTIONS = [
@@ -18,6 +19,7 @@ const OPTIONS = [
   "opt-insta-prompts",
   "opt-linkedin-prompts",
   "opt-twitter-prompts",
+  "opt-reddit-prompts",
 ] as const;
 
 export type StorageKeys = (typeof OPTIONS)[number];
@@ -31,6 +33,7 @@ export const DEFAULT_CONFIG: Config = {
   "opt-insta-prompts": INSTAGRAM_PROMPTS,
   "opt-linkedin-prompts": LINKED_IN_PROMPTS,
   "opt-twitter-prompts": TWITTER_PROMPTS,
+  "opt-reddit-prompts": REDDIT_PROMPTS,
   "opt-model-type": MODEL_OPT_DEFAULT,
   "opt-hashtag-option": HASHTAG_OPT_DEFAULT,
 };

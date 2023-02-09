@@ -15,6 +15,8 @@ const ALL_PROMPTS: Record<Domains, [string, StorageKeys]> = {
   [Domains.LinkedIn]: ["LinkedIn", "opt-linkedin-prompts"],
   [Domains.Instagram]: ["Instagram", "opt-insta-prompts"],
   [Domains.Twitter]: ["Twitter", "opt-twitter-prompts"],
+  [Domains.Twitter]: ["Twitter", "opt-twitter-prompts"],
+  [Domains.Reddit]: ["Reddit", "opt-reddit-prompts"],
 };
 
 const Prompts: React.FC<Props> = ({ type }) => {

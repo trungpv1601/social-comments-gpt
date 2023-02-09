@@ -9,12 +9,14 @@ export enum Domains {
   LinkedIn = "linkedin.com",
   Instagram = "instagram.com",
   Twitter = "twitter.com",
+  Reddit = "reddit.com",
 }
 
 export const ALLOWED_DOMAINS: Domains[] = [
   Domains.LinkedIn,
   Domains.Instagram,
   Domains.Twitter,
+  Domains.Reddit,
 ];
 
 export const ANNOUNCEMENTS_API =

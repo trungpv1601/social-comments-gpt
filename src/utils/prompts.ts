@@ -15,3 +15,9 @@ export const TWITTER_PROMPTS = [
   `I want you to act as a twitter that creates insightful replies on different posts to gain followers and more profile views. Here is the content of the post "{postContent}"`,
   `I want you to act as a twitter user that add replies on different posts to engage other people and have more impressions, views, and followers. Here is what the post about "{postContent}"`,
 ];
+
+export const REDDIT_PROMPTS = [
+    `I want you to act as a reddit user that puts comments on different posts to engage other people and have more followers. Here is the post "{postContent}"`,
+    `I want you to act as a reddit user that creates insightful comments on different posts to gain followers and more profile views. Here is the content of the post "{postContent}"`,
+    `I want you to act as a reddit user that add comments on different posts to engage other people and have more impressions, views, and followers. Here is what the post about "{postContent}"`,
+  ];
