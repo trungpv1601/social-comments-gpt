@@ -20,6 +20,9 @@ export enum CommentsStyle {
   FRIENDLY = "friendly",
   FUNNY = "funny",
   ANYTHING = "anything",
+  HOOK = "hook",
+  COMPRESS = "compress",
+  STONER = "stoner",
 }
 
 export const COMMENTS_STYLE_OPT_DEFAULT = CommentsStyle.ANYTHING;
@@ -47,6 +50,18 @@ export const COMMENTS_STYLE_OPTS: CheckboxOption[] = [
   {
     value: CommentsStyle.FUNNY,
     label: "Funny",
+  },
+  {
+    value: CommentsStyle.HOOK,
+    label: "Hook",
+  },
+  {
+    value: CommentsStyle.COMPRESS,
+    label: "Compress",
+  },
+  {
+    value: CommentsStyle.STONER,
+    label: "Stoner",
   },
 ];
 

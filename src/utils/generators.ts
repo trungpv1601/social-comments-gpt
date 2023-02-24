@@ -60,6 +60,15 @@ export const createPrompt = (
     case CommentsStyle.FUNNY:
       prompt += " please respond in a very funny way.";
       break;
+    case CommentsStyle.HOOK:
+      prompt += " please respond in a way that will hook the reader.";
+      break;
+    case CommentsStyle.COMPRESS:
+      prompt += " please respond in a way that will compress the reader.";
+      break;
+    case CommentsStyle.STONER:
+      prompt += " please respond in a way that will stoner the reader.";
+      break;
   }
 
   if (prompt[prompt.length - 1] === ";") {
